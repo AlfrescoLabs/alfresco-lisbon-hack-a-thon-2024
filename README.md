@@ -143,7 +143,7 @@ Happy hacking!
 
 **Provide an OpenSearch search subsystem for Alfresco Community**
 
-Idea owner: @aborroy
+Idea owner: [Angel Borroy](https://github.com/aborroy)
 
 Description: The aim of this project is to provide an OpenSearch search subsystem for Alfresco Community.
 
