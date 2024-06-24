@@ -212,3 +212,16 @@ At least two distinct use cases should be considered as very common and in need 
 Interested parties:
 
 * [Put your name here]
+
+
+**Implement open source library of (extended) ACS integration tasks**
+
+Idea owner: [Axel Faust](https://github.com/AFaust) (note: multiple ideas - I may/can only work on one and anyone interested may take over ownership of this idea)
+
+Description: The aim of this project is to develop an open source / community-managed library of process tasks for the integration with ACS that extends to core set of capabilities included in APS.
+
+Background: Process Services comes with basic ACS integration tasks used in storing content in ACS and changing metadata of such content, including utilities for the convenient definition of such integrations in the editor. In some use cases, the set of this functionality may be too limited. Simple tasks such as copying or moving content, changing permissions, creating relationships etc. are currently (AFAIK) not possible out-of-the-box.
+
+Interested parties:
+
+* [Put your name here]
