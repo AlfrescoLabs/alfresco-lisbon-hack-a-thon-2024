@@ -180,5 +180,35 @@ Interested parties:
 
 ## Content Services
 
+**Develop Repository Administration Console UI for JavaScript Console**
+
+Idea owner: [Axel Faust](https://github.com/AFaust) (note: multiple ideas - I may/can only work on one and anyone interested may take over ownership of this idea)
+
+Description: The aim of this project is to develop a (basic) frontend for the JavaScript Console functionality of the [OOTBee Support Tools](https://github.com/OrderOfTheBee/ootbee-support-tools) addon in the Repository-tier Administration Console.
+
+Background: In version 1.2.0.0 of the [OOTBee Support Tools](https://github.com/OrderOfTheBee/ootbee-support-tools) an "as-is" fork of the JavaScript Console addon was included with the module. Considering that the Alfresco Share UI has been deprecated for a while and Alfresco is working on an ADF-based Control Center, it would be ideal if the JavaScript Console functionality no longer required Share (or any additional UI) as its primary UI.
+
+While it would be the goal to eventually have feature parity with the existing Share frontend, this hackathon project's focus would be more on a working "minimum viable product" state with a web-based code editor library of choice that can be extended after the hackathon event towards the eventual full functionality.
+
+Interested parties:
+
+* [Put your name here]
+
 ## Process Services
 
+**Implement developer tooling to sync/deploy process, form, and app definitions with APS instance**
+
+Idea owner: [Axel Faust](https://github.com/AFaust) (note: multiple ideas - I may/can only work on one and anyone interested may take over ownership of this idea)
+
+Description: The aim of this project is to develop some developer tooling that helps to synchronise models in an APS runtime with models under version control.
+
+Background: Not all projects in a Process Services context work with fully user-managed process, form, and app models. In quite a few use cases models may be provided by developers and may also be under source code version control. There currently does not exist tooling that helps developers work with version controlled models, automated deployment, and/or synchronisation with the runtime state of (local) dev instances. Exported app definitions in ZIP format do not lend themselves to be version controlled. Repeated import/export cycles result in changes to model IDs and versions, that can make it difficult to manually deal with references. Lastly, exported JSON models are unformatted, which also does not work well with text-based line-by-line diffing in version control.
+
+At least two distinct use cases should be considered as very common and in need of support:
+
+* (automated) deployment of (potentially updated) app definitions and models bundled with a JAR built from an extension project
+* synchronisation of app definitions and models in an extension project with a Process Services runtime (dev) instance, compatible with common source code versioning practices
+
+Interested parties:
+
+* [Put your name here]
