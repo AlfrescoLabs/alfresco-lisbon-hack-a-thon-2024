@@ -233,53 +233,55 @@ Interested parties:
 
 Idea(s) owner: [Steve Reiner](https://github.com/stevereiner) 
 
-Description: The fork of the [Alfresco GenAI](https://github.com/aborroy/alfresco-genai) project  into [Alfresco GenAI Semantic](https://github.com/stevereiner/alfresco-genai-semantic) project
-This adds entity linking of documents in alfresco to Wikidata and DBpedia. The [spaCy NLP python library](https://spacy.io/) along with spaCy projects are used for getting the entity links.
-
+Description: The fork of the [Alfresco GenAI](https://github.com/aborroy/alfresco-genai) project  into [Alfresco GenAI Semantic](https://github.com/stevereiner/alfresco-genai-semantic) project  adds entity linking of documents in alfresco to Wikidata and DBpedia. The [spaCy NLP python library](https://spacy.io/) along with spaCy projects are used for getting the entity links. 
 Currently the 2 custom aspects have multivalue properties for the links, alfresco tags aren't used. Plan to
 change to hierarchy of category tags so can search say category auto and get documents with entity links to Honda and Toyota, etc.
-
 See [blog article on project] (https://integratedsemantics.org/2024/06/12/alfresco-genai-semantic-project/)
 
 Performance could be improved by sending text renditions instead of pdf renditions to the python code. I could use help on this.
 
-Interested parties:
-* [Put your name here]
+**Knowlege Graphs**
 
-** Knowlege Graphs**
-
-1. Have entity links created in Neo4j and/or RDF datatabase like Ontotext GraphDB. Neo4j's rdflib-neo4j could be used for common schema.
-
-2. Have more a complete knowledge graph of a document created (also have relations) Bunch of projects like Neo4j's [NaLLM](https://github.com/neo4j/NaLLM) and
+* Have entity links created in Neo4j and/or RDF datatabase like Ontotext GraphDB. Neo4j's rdflib-neo4j could be used for common schema.
+* Have more a complete knowledge graph of a document created (also have relations) Bunch of projects like Neo4j's [NaLLM](https://github.com/neo4j/NaLLM) and
 [Knowledge Graph Builder](https://github.com/neo4j-labs/llm-graph-builder) are out there. Most focus on doing this all with LLMs (with and with out a constraining schema).
 Going to try with the entity links from spacy nlp and then have LLMs finish the job. 
-
-3. Be able to display the graph for one document or multiple documents from the ACA client. Keep the graphs updated with repository changes. GenAI natural language
-could be used to search such graphs (with SPARQL or cypher queries generated under the covers by GenAI).
+* Be able to display the graph for one document or multiple documents from the ACA client. Keep the graphs updated with repository changes.
+* GenAI natural language could be used to search such graphs (with SPARQL or cypher queries generated under the covers by GenAI).
 
 Interested parties:
 * [Put your name here]
 
-## Content Services, Process Services: Python API, GraphQL, GQL
+## Content Services, Process Services: Python API
 
 Idea(s) owner: not [Steve Reiner](https://github.com/stevereiner), just suggesting:
 
-*Python API to Alfresco
-Assume this would be a remote api on top of Alfresco Content Services REST API.  Apache chemistry has a cmislib python client api. See Jeff Pott's blog [cmislib topic](https://ecmarchitect.com/categories/apache-chemistry/cmislib)
+**Python API for Alfresco ACS**
+Assume this would be a remote api on top of Alfresco Content Services REST API. Apache chemistry has a cmislib python client api. See Jeff Pott's blog [cmislib topic](https://ecmarchitect.com/categories/apache-chemistry/cmislib)
+
+**Python API for Alfresco Process Services**
+This would be good to have also if it doesn't exist.
 
 Interested parties:
 * [Put your name here]
 
-*Further work on [GraphQL](https://graphql.org/) api, New work on GQL
-Some work was has been done
-[GraphQL endpoint for Alfresco ACS](https://github.com/asauvez/alfresco-graphql)
-[Alfresco DevCon 2018: The Power fo GraphQL in Activiti Query API](https://www.youtube.com/watch?v=jKl7w5LN7v0)
-GraphQL is more of style of doing apis than a very specific standard.  
-Could Alfresco support the GQL query standard, separately and also within GraphQL?
-(in regards to GQL, see mult-model below)
+## Content Services, Process Services: GraphQL, Content Services: GQL
+
+Idea(s) owner: not [Steve Reiner](https://github.com/stevereiner), just suggesting:
+
+**Further work on [GraphQL](https://graphql.org/) api**
+* GraphQL is more of style of doing apis than a very specific standard. 
+* Some work was has been done:
+* [GraphQL endpoint for Alfresco ACS](https://github.com/asauvez/alfresco-graphql)
+* [Alfresco DevCon 2018: The Power fo GraphQL in Activiti Query API](https://www.youtube.com/watch?v=jKl7w5LN7v0)
+
+**New work on GQL**
+* Could Alfresco support the GQL query standard?
 [GQLstandards.org](https://www.gqlstandards.org/home)
 [GQL Wikipedia](https://en.wikipedia.org/wiki/Graph_Query_Language)
-[GQL Neo4j]{https://neo4j.com/blog/cypher-gql-world/)
+[GQL Neo4j](https://neo4j.com/blog/cypher-gql-world/)
+* GQL could be supported standalone or within GraphQL.
+* In regards to GQL, see mult-model below.
 
 Interested parties:
 * [Put your name here]
@@ -288,25 +290,26 @@ Interested parties:
 
 Idea(s) owner: not [Steve Reiner](https://github.com/stevereiner), just suggesting:
 
-* Multi-Model: Postgres + [Apache AGE](https://age.apache.org/) Graph Database Extension + Alfresco
-Idea is to have is to have the graph capabilities more tightly integrated for application development and querying purposes.
-Postgres + AGE would be used with Alfresco Community or Alfresco Enterprise.
+* Idea is to have is to have the graph capabilities more tightly integrated for application development and querying purposes.
 
-*Commercial multi-model databases that support graphs like [Oracle, MSSQL, etc.](https://db-engines.com/en/ranking/graph+dbms/all) could also be supported without AGE
+* Postgres + [Apache AGE](https://age.apache.org/) Graph Database Extension would be used with Alfresco Community or Alfresco Enterprise.
+
+* Postgres versions: Alfresco supports Postgres versions 13 thru 15. The versions of Postgres supported by AGE are 11 thru 16. Note: Amazon Aurora supports many Postgres extensions but didn't see AGE.
+
+* Commercial multi-model databases that support graphs like [Oracle, MSSQL, etc.](https://db-engines.com/en/ranking/graph+dbms/all) could also be supported without AGE
 with Alfresco
 
-* Postgres versions: what can version can Alfresco support? What versions are supported by AGE (saw support for version 16). What would work in the cloud (didn't see AWS Postgres support yet for AGE).
-
-*Could graph types be used in alfresco aspects?
+* Could graph types be used in alfresco aspects?
 
 * Even more more extreme: could Alfreso folder and document content model be done in graph types? (May then not even need relational and could run on graph databases)
 
 * How to query: AGE has openCyper GQL like support that can be used with extensions to Postgres SQL. How would you also query Alfresco?
 
+* Note: vector support is being considered by Apache AGE: A proposal for applying PGvector to Apache AGE has been posted on [GitHub](https://github.com/apache/age/issues/1121) 
+  
 * RQF and SPARQL could be suported:
-1. With multi-model databases that support RDF like [Oracle, IBM DB2, Virtuoso etc.](https://db-engines.com/en/ranking/rdf+store/all)
-2. Open source code from Neo4j [neosemantics](https://github.com/neo4j-labs/neosemantics) server side java and/or [rdflib-neo4j](https://github.com/neo4j-labs/rdflib-neo4j) client side python
-could be adapted to work with Apache AGE + Postgres
+Open source code from Neo4j [neosemantics](https://github.com/neo4j-labs/neosemantics) server side java and/or [rdflib-neo4j](https://github.com/neo4j-labs/rdflib-neo4j) client side python could be adapted to work with Apache AGE + Postgres. With multi-model databases that support RDF like [Oracle, IBM DB2, Virtuoso etc.](https://db-engines.com/en/ranking/rdf+store/all)
 
+Read more
 Interested parties:
 * [Put your name here]
