@@ -257,7 +257,8 @@ Interested parties:
 Idea(s) owner: not [Steve Reiner](https://github.com/stevereiner), just suggesting:
 
 **Python API for Alfresco ACS**
-Assume this would be a remote api on top of Alfresco Content Services REST API. Apache chemistry has a cmislib python client api. See Jeff Pott's blog [cmislib topic](https://ecmarchitect.com/categories/apache-chemistry/cmislib)
+Assume this would be a remote api on top of Alfresco Content Services REST API. Apache chemistry has a cmislib python client api. See Jeff Pott's blog [cmislib topic](https://ecmarchitect.com/categories/apache-chemistry/cmislib).
+Note by [Axel Faust](https://github.com/AFaust): I have in the past started work on a [python client lib](https://github.com/Acosix/alfresco-python-client) for a customer who wanted to access Alfresco in a Chatbot client.
 
 **Python API for Alfresco Process Services**
 This would be good to have also if it doesn't exist.
