@@ -121,7 +121,7 @@ Here are some resources to help you get started:
 
 - [Alfresco Documentation](https://docs.alfresco.com)
 - [Alfresco GitHub Repositories](https://github.com/Alfresco)
-- [API Reference](https://api.alfresco.com)
+- [API Reference](https://api-explorer.alfresco.com/api-explorer/#/)
 
 ## Code of Conduct
 
