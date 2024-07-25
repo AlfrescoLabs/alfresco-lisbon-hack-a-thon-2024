@@ -86,6 +86,9 @@ If you're searching for ideas to kickstart your project, you've come to the righ
   - https://github.com/AlfrescoLabs/GenAI-Experiments
   - https://github.com/aborroy/alfresco-genai
   - https://github.com/aborroy/alfresco-opensearch-neural-search
+ 
+- Community GenAI Projects
+  - https://github.com/ThomasVitale/llm-apps-java-spring-ai
 
 **For everyone**
 
