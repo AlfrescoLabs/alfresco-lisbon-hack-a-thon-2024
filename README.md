@@ -197,6 +197,33 @@ Interested parties:
 
 * [Put your name here]
 
+## Content Services Community AI Integrations
+
+**Further work on the Alfresco AI Assistants**
+
+Idea owner: [Domenico Sibilio](https://github.com/dsibilio)
+
+Description: The aim of this initiative is to perform further work on the [Alfresco AI Assistants](https://github.com/AlfrescoLabs/alfresco-ai-assistants), improving the current implementation and trying out new potential features!
+
+Background: The [Alfresco AI Assistants](https://github.com/AlfrescoLabs/alfresco-ai-assistants) repository contains a set of powerful AI assistants that help users and customers get the information they need or perform complex tasks, simply conveying each request via natural language. The project is entirely written in Python.
+
+Some example features that could be worked on as part of this initiative _(we're open to ideas!)_:
+
+**Alfredo:**
+  * experiment with user-specific authentication rather than using a configurable service account
+  * experiment with tool-chaining _(read: give the power to the AI to chain multiple tools in a row on its own rather than through orchestration)_
+  * implement AI reliability features such as e.g.: jailbreaking detection
+  * experiment with adding support for text-to-image models such as e.g.: Stable Diffusion
+
+**Alfresco Docs Bot:**
+  * implement a crawling mechanism to perform live-ingestion of the documentation rather than ingesting it from the filesystem
+  * implement chat memory with resettable conversations
+  * implement AI reliability features such as e.g.: jailbreaking detection
+
+Interested parties:
+
+* [Put your name here]
+
 ## Process Services
 
 **Implement developer tooling to sync/deploy process, form, and app definitions with APS instance**
