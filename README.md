@@ -210,8 +210,8 @@ Background: The [Alfresco AI Assistants](https://github.com/AlfrescoLabs/alfresc
 Some example features that could be worked on as part of this initiative _(we're open to ideas!)_:
 
 **Alfredo:**
-  * experiment with user-specific authentication for rather than using a configurable service account
-  * experiment with tool-chaining _(give the power to the AI to chain multiple tools in a row on its own rather than through orchestration)_
+  * experiment with user-specific authentication rather than using a configurable service account
+  * experiment with tool-chaining _(read: give the power to the AI to chain multiple tools in a row on its own rather than through orchestration)_
   * implement AI reliability features such as e.g.: jailbreaking detection
   * experiment with adding support for text-to-image models such as e.g.: Stable Diffusion
 
