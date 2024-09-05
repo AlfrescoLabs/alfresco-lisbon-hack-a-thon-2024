@@ -105,19 +105,6 @@ After the event has come to an end, we encourage everyone that worked on a speci
 3. **Submit a Pull Request**: Submit the output of your project via a pull request to this repository.
 4. **Presentation**: Prepare a short presentation (5-10 minutes) to showcase your project that will happen in October Alfresco Tech Talk Live.
 
-## Judging Criteria
-
-Projects will be judged based on the following criteria:
-
-- **Innovation**: How creative and original is the project?
-- **Technical Difficulty**: How complex and technically challenging is the project?
-- **Usability**: How user-friendly and practical is the solution?
-- **Presentation**: How well is the project presented?
-
-## Prizes
-
-Prizes will be awarded to the top teams. Details about the prizes will be announced during the event.
-
 ## Resources
 
 Here are some resources to help you get started:
