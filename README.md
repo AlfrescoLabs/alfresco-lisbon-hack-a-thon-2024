@@ -184,6 +184,16 @@ Interested parties:
 
 * [Put your name here]
 
+**Process pending pull request(s) for OOTBee Support Tools**
+
+Idea owner: [Axel Faust](https://github.com/AFaust) (note: multiple ideas - I may/can only work on one and anyone interested may take over ownership of this idea)
+
+Description: The aim of this project is to process any pending pull request(s) in the Order of the Bee Support Tools project. Especially a PR provided by Heiko Robert for the JavaScript Console warrants consideration and may need to some work to integrate with the latest state.
+
+Interested parties:
+
+* [Put your name here]
+
 ## Content Services Community AI Integrations
 
 **Further work on the Alfresco AI Assistants**
