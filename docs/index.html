@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery from Hyland Alfresco TechQuest 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            width: 80%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            transition: transform 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="gallery" id="gallery">
+        <h1 style="color:#006334">Alfresco TechQuest 2024</h1>
+        <!-- Images will be added here dynamically -->
+    </div>
+
+    <!-- Add Lightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        // The number of images in the folder
+        const imageCount = 241;
+        const gallery = document.getElementById('gallery');
+
+        for (let i = 1; i <= imageCount; i++) {
+            const imgNumber = i.toString().padStart(3, '0'); // For numbering images with leading zeroes (if needed)
+            const imgPath = `images/Image-${imgNumber}.jpg`;
+            const a = document.createElement('a');
+            a.href = imgPath;
+            a.setAttribute('data-lightbox', 'gallery');
+            a.setAttribute('data-title', `Image ${i}`);
+
+            const img = document.createElement('img');
+            img.src = imgPath;
+            img.alt = `Image ${i}`;
+
+            a.appendChild(img);
+            gallery.appendChild(a);
+        }
+    </script>
+</body>
+</html>
