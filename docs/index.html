@@ -8,11 +8,17 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
             background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a {
+           color:#006334; 
         }
 
         .gallery {
@@ -35,13 +41,33 @@
             transform: scale(1.05);
             transition: transform 0.2s ease;
         }
+
+        #footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+
+        #footer p {
+            margin: 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
+
+    <p/>
     
     <div class="gallery" id="gallery">
         <h1 style="color:#006334">Alfresco TechQuest 2024</h1>
         <!-- Images will be added here dynamically -->
+    </div>
+
+    <div id="footer">
+        <p>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+        </p>
     </div>
 
     <!-- Add Lightbox JS -->
@@ -68,6 +94,5 @@
             gallery.appendChild(a);
         }
     </script>
-    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></p>
 </body>
 </html>
